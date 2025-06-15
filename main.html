@@ -11,116 +11,136 @@
 </head>
 <!-- AL ACABAR EL EJERCICIO, HE CAIDO QUE SE PODÍA USAR ROW(YA ERA TARDE AN AMBOS SENTIDOS, SI HACE FALTA QUE SE REHAGA, LO REHAGO)...DE MODO QUE NO ES RESPONSIVE AL 100%. -->
 
-<body>
-    <div class="Principal container p-5">
-        <div class="Header d-flex justify-content-start col-12">
-            <strong>Payment form example</strong>
+<body class="bg-light">
+    <div class="justify-content-start">
+        <div class="Paymentexample justify-content-center mx-5">
+            <h3>Payment form example</h3>
         </div>
-        <div class="alert alert-danger d-flex justify-content-start col-12">
+        <div class="alert alert-danger mx-5">
 
-            <div class="alert1 mx-2">
+            <div class="alert1">
                 <i class="fa-solid fa-triangle-exclamation" style="color: #862842;"></i>
                 Some fields are missing
             </div>
 
         </div>
 
-        <div class="TodosLosDatos container d-flex flex-column align-items-center justify-content-center col-12">
-            <div class="DatosTarjeta d-flex gap-1 col-12">
-                <div class="Card# col-5">
-                    <label for="Card#" class="form-label">Card#</label>
-                    <input type="text" class="form-control" id="Card#" placeholder="XXXX-XXXX-XXXX-XXXX" required>
-                </div>
-                <div class="CVC col-3">
-                    <label for="CVC" class="form-label">CVC</label>
-                    <input type="text" class="form-control" id="CVC" placeholder="000" required>
-                </div>
-
-                <div class="Amount col-4">
-                    <label for="Amount" class="form-label">Amount</label>
-                    <div class="input-group">
-                        <span class="input-group-text" id="Amount">$</span>
-                        <input type="text" class="form-control" id="Amount" placeholder="00,00$" required>
-
+        <fieldset class="bg-light border rounded mx-5 mt-2 pb-4">
+                <div class="DatosTarjeta container row">
+                    <div class="Card# col-12 col-md-5">
+                        <label for="Card#" class="form-label">Card#</label>
+                        <input type="text" class="form-control" id="Card#" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    </div>
+                    <div class="CVC col-12 col-md-3 ">
+                        <label for="CVC" class="form-label">CVC</label>
+                        <input type="text" class="form-control" id="CVC" placeholder="000" required>
                     </div>
 
+                    <div class="Amount col-12 col-md-4">
+                        <label for="Amount" class="form-label">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="Amount1">$</span>
+                            <input type="text" class="form-control" id="Amount" placeholder="00,00$" required>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="DatosPersonales1 d-flex gap-2 col-12">
-                <div class="FirstName1 col-6">
-                    <div>
+        </fieldset>
+
+
+        <fieldset class="bg-light border rounded mx-5 mt-2 pb-4">
+                <div class="NombreApellido container row">
+                    <div class="Nombre col-12 col-md-6">
                         <label for="FirstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="FirstName" placeholder="John" required>
                     </div>
-                    <div class="City">
-                        <label for="City" class="form-label">City</label>
-                        <input type="text" class="form-control" id="City" placeholder="Atlantida" required>
-                    </div>
-                    <div>
-                        <label for="Weaccept" class="form-label">We accept</label>
-                        <div class="Radiobutton">
-                            <button type="button" class="btn btn-secondary d-flex gap-3">
-                                <div class="button1">
-                                    <i class="fa-brands fa-cc-mastercard" style="color: #fb2e28;"></i>
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                </div>
-                                <div class="button2">
-                                    <i class="fa-brands fa-cc-visa" style="color: #0468b9;"></i>
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                </div>
-                                <div class="button3">
-                                    <i class="fa-brands fa-cc-amex" style="color: #000000;"></i>
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                </div>
-                                <div class="button4">
-                                    <i class="fa-brands fa-cc-paypal" style="color: #74C0FC;"></i>
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                </div>
-                            </button>
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="FirstName2 col-6">
-                    <div>
+                    <div class="Apellido col-12 col-md-6">
                         <label for="FirstName1" class="form-label">Last name</label>
                         <input type="text" class="form-control" id="FirstName1" placeholder="Smith" required>
                     </div>
 
-                    <div class="State row g-2">
-                        <div class="State1 col-6">
-                            <label for="State2" class="form-label">State</label>
-                            <select class="form-select" aria-label="State2">
-                                <option selected disabled>Pick a state</option>
-                                <option value="1">España</option>
-                                <option value="2">Russia</option>
-                                <option value="3">Venezuela</option>
-                                <option value="4">USA</option>
-                                <option value="5">China</option>
-                            </select>
-                        </div>
-
-                        <div class="PostalCode col-6">
-                            <label for="PostalCode1" class="form-label">Postal Code</label>
-                            <input type="text" class="form-control" id="PostalCode1" placeholder="000000-PC" required>
+                </div>
+                <div class="CiudadPaisCP row container">
+                    <div class="Ciudad container col-12 col-md-6">
+                        <div class="City">
+                            <label for="City" class="form-label">City</label>
+                            <input type="text" class="form-control" id="City" placeholder="Atlantida" required>
                         </div>
                     </div>
 
-
-
-                    <div class="Message">
-                        <label for="Message1">Message</label>
-                        <textarea class="form-control" placeholder="Leave a comment here" id="Message2"
-                            style="height: 100px"></textarea>
-                        <span class="opacity-50">Add any notes here.</span>
+                    <div class="State1 container col-12 col-md-3">
+                        <label for="State2" class="form-label">State</label>
+                        <select class="form-select" aria-label="State2">
+                            <option selected disabled>Pick a state</option>
+                            <option value="1">España</option>
+                            <option value="2">Russia</option>
+                            <option value="3">Venezuela</option>
+                            <option value="4">USA</option>
+                            <option value="5">China</option>
+                        </select>
                     </div>
 
+                    <div class="PostalCode col-12 col-md-3">
+                        <label for="PostalCode1" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="PostalCode1" placeholder="000000-PC" required>
+                    </div>
+                </div>
+        </fieldset>
 
+
+
+
+    </div>
+    <fieldset class="bg-light border rounded mx-5 mt-2 ">
+            <div class="tarjetamessage container row justify-content-between">
+
+                <div class="Tarjetas container row col-12 col-md-6">
+                    <label for="Weaccept" class="form-label">We accept</label>
+
+                    <div class="Radiobutton">
+                        <button type="button" class="btn btn-secondary d-flex gap-2">
+                            <div class="button1">
+                                <i class="fa-brands fa-cc-mastercard" style="color: #fb2e28;"></i>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="button2">
+                                <i class="fa-brands fa-cc-visa" style="color: #0468b9;"></i>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="button3">
+                                <i class="fa-brands fa-cc-amex" style="color: #000000;"></i>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="button4">
+                                <i class="fa-brands fa-cc-paypal" style="color: #74C0FC;"></i>
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="Message col-12 col-md-6">
+                    <label for="Message1" class="form-label">Message</label>
+                    <textarea class="form-control " placeholder="Leave a comment here" id="Message1"
+                        style="height: 100px"></textarea>
+                    <span class="opacity-50">Add any notes here.</span>
+                </div>
+            </div>
+    </fieldset>
+    <fieldset class="d-flex justify-content-end mx-5 py-3 px-4 mt-2">
+         <div class="d-flex gap-2">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+    </fieldset>
+
+
+    </div>
+</body>
+
+</html>
 
                 </div>
 
